@@ -14,14 +14,14 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 export default function Display1() {
-  const [isLink, setLink] = useState("http://localhost:3000");
+  const [isLink, setLink] = useState("https://ninox-fox.wibudev.com/");
   const router = useRouter();
 
   function OnLink() {
-    if (isLink == "http://localhost:3000") {
-      setLink("http://localhost:3011");
+    if (isLink == "https://ninox-fox.wibudev.com/") {
+      setLink("https://raven-stone2.wibudev.com/");
     } else {
-      setLink("http://localhost:3000");
+      setLink("https://ninox-fox.wibudev.com/");
     }
   }
   return (
@@ -43,17 +43,17 @@ export default function Display1() {
               <Button onClick={OnLink}>SWITCH</Button>
             </Box>
           </Group>
-          {isLink == "http://localhost:3000" && (
+          {isLink == "https://ninox-fox.wibudev.com/" && (
             <iframe
-              src={"http://localhost:3000"}
+              src={"https://ninox-fox.wibudev.com/"}
               width={"100%"}
               height={"100%"}
             />
           )}
 
-          {isLink == "http://localhost:3011" && (
+          {isLink == "https://raven-stone2.wibudev.com/" && (
             <iframe
-              src={"http://localhost:3011"}
+              src={"https://raven-stone2.wibudev.com/"}
               width={"100%"}
               height={"100%"}
             />
