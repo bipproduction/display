@@ -6,8 +6,8 @@ import 'react-simple-toasts/dist/theme/dark.css'
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 
 export const metadata = {
-  title: 'My Mantine app',
-  description: 'I have followed setup instructions carefully',
+  title: 'Display - Bali Interaktif Perkasa',
+  description: 'Display raven stone, ninox, webcam and noc',
 };
 
 export default function RootLayout({
