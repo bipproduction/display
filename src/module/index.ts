@@ -1,3 +1,6 @@
-import LoginView from "./view/login";
+import Display1 from "./view/display_1";
+import ViewLogin from "./view/login";
 
-export { LoginView }
+
+export {ViewLogin}
+export {Display1}
