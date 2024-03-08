@@ -14,14 +14,14 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 export default function Display1() {
-  const [isLink, setLink] = useState("http://localhost/3000");
+  const [isLink, setLink] = useState("http://localhost:3000");
   const router = useRouter();
 
   function OnLink() {
-    if (isLink == "http://localhost/3000") {
-      setLink("http://localhost/3011");
+    if (isLink == "http://localhost:3000") {
+      setLink("http://localhost:3011");
     } else {
-      setLink("http://localhost/3000");
+      setLink("http://localhost:3000");
     }
   }
   return (
@@ -43,17 +43,17 @@ export default function Display1() {
               <Button onClick={OnLink}>SWITCH</Button>
             </Box>
           </Group>
-          {isLink == "http://localhost/3000" && (
+          {isLink == "http://localhost:3000" && (
             <iframe
-              src={"http://localhost/3000"}
+              src={"http://localhost:3000"}
               width={"100%"}
               height={"100%"}
             />
           )}
 
-          {isLink == "http://localhost/3011" && (
+          {isLink == "http://localhost:3011" && (
             <iframe
-              src={"http://localhost/3011"}
+              src={"http://localhost:3011"}
               width={"100%"}
               height={"100%"}
             />
