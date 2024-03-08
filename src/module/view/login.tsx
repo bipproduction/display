@@ -31,7 +31,7 @@ export default function ViewLogin() {
     const cek = await funLogin({ username: isUsername, password: isPassword });
     if (!cek) return toast("Wrong username or password!", { theme: "dark" });
 
-    router.push("/display-1");
+    router.push("/ninox");
   }
 
   return (
