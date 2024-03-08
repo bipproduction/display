@@ -1,3 +1,9 @@
+import { Display1 } from "@/module";
+
 export default function Page(){
-   return<div>Display 1</div>
+   return (
+      <>
+      <Display1/>
+      </>
+   )
 }
